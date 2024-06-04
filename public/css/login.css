@@ -1,7 +1,7 @@
 body{
     display: grid;
     place-items: center;
-    height: 90vh;
+    height: 80vh;
     font-family: sans-serif;
   }
   .wrapper {

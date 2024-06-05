@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('jadwal', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->increments('id');
+            $table->string('city');
+            $table->string('jam_keberangkatan');
         });
     }
 

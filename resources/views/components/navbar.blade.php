@@ -1,3 +1,4 @@
+<link href="{{asset('css/landing.css')}}" rel="stylesheet" type="text/css">    
     <nav>
         <div class="landing-title"><a href="/">Ticket Online</a></div>
         <ul>

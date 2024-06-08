@@ -10,7 +10,7 @@
     <nav>
         <div class="landing-title">Ticket Online</div>
         <ul>
-            <li><a href="">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="">Buy</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="">Log Out</a></li>
@@ -18,7 +18,7 @@
     </nav>
     <div id="about">About</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nulla rem debitis doloremque distinctio perspiciatis totam cupiditate molestiae, dolorum quibusdam tenetur quo impedit odio suscipit delectus placeat! Itaque, debitis.</article>
-    <a href="">-></a>
+    <a href="/about-page">-></a>
     <div id="buy">Buy</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt alias vitae reprehenderit asperiores quibusdam consequuntur, eveniet dolorum, quas nihil illo repudiandae ipsum aliquid corporis voluptatum iusto excepturi voluptate ab?</article>
     <a href="">-></a>

@@ -8,7 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-
+    <nav>
+        <div class="title">Ticket Online</div>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Buy</a></li>
+            <li><a href="/contact-page">Contact</a></li>
+            <li><a href="">Log Out</a></li>
+        </ul>
+    </nav>
     <ul role="list" class="divide-y divide-gray-100">
         <li class="user-item">
           <div class="user-info">

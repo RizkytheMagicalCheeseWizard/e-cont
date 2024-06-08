@@ -8,16 +8,14 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-    /* padding: 20px; */
     height: 70px;
     align-items: center;
     background-color: transparent;
-    
-    
 }
-/* .landing-title{
-    
-} */
+.landing-title{
+    text-decoration: none;
+    color: black;
+}
 nav ul{
     display: flex;
     list-style: none;

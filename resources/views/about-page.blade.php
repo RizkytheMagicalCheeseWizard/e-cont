@@ -10,8 +10,8 @@
     <nav>
         <div class="title">Ticket Online</div>
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Buy</a></li>
+            <li><a href="/about-page">About</a></li>
+            <li><a href="/buy-page">Buy</a></li>
             <li><a href="/contact-page">Contact</a></li>
             <li><a href="">Log Out</a></li>
         </ul>

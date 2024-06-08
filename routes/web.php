@@ -12,6 +12,6 @@ Route::get('/',function(){
 ROute::get('/about-page',function(){
     return view('about-page');
 });
-Route::get('/landing-page',function(){
-    return view('landing-page');
+Route::get('/buy-page',function(){
+    return view('buy-page');
 });

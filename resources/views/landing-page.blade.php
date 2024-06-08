@@ -21,11 +21,11 @@
     <a href="/about-page">-></a>
     <div id="buy">Buy</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt alias vitae reprehenderit asperiores quibusdam consequuntur, eveniet dolorum, quas nihil illo repudiandae ipsum aliquid corporis voluptatum iusto excepturi voluptate ab?</article>
-    <a href="">-></a>
-
-    <div id="contact">Contact</div>
-    <section>
-        <ul role="list" class="divide-y divide-gray-100">
+    <a href="/buy-page">-></a>
+    <footer>
+      <div id="contact">Contact</div>
+        <section>
+          <ul role="list" class="divide-y divide-gray-100">
             <li class="user-item">
               <div class="user-info">
                 <img class="user-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
@@ -39,8 +39,8 @@
                 <p class="last-seen">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
               </div>
             </li>
-        </ul>
-        <ul role="list" class="divide-y divide-gray-100">
+          </ul>
+          <ul role="list" class="divide-y divide-gray-100">
             <li class="user-item">
               <div class="user-info">
                 <img class="user-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
@@ -54,9 +54,10 @@
                 <p class="last-seen">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
               </div>
             </li>
-        </ul>
-    </section>
-    <a href="">-></a>
+          </ul>
+      </section>
+    </footer>
+    
 
 </body>
 </html>

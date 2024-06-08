@@ -7,15 +7,7 @@
     <link href="{{asset('css/about.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <nav>
-        <div class="title">Ticket Online</div>
-        <ul>
-            <li><a href="/about-page">About</a></li>
-            <li><a href="/buy-page">Buy</a></li>
-            <li><a href="/contact-page">Contact</a></li>
-            <li><a href="">Log Out</a></li>
-        </ul>
-    </nav>
+    <x-navbar></x-navbar>
     <div class="flex-to-center">
         <div class="wrapper-gradient-border-radius">
             <div class="img">img</div>

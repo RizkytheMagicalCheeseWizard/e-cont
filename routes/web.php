@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('login-page');
 // });
 
-Route::get('/home',function(){
+Route::get('/',function(){
     return view('landing-page');
 });
 ROute::get('/about-page',function(){

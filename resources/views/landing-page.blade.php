@@ -7,15 +7,7 @@
     <link href="{{asset('css/landing.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <nav>
-        <div class="landing-title">Ticket Online</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="">Buy</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Log Out</a></li>
-        </ul>
-    </nav>
+    <x-navbar></x-navbar>
     <div id="about">About</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nulla rem debitis doloremque distinctio perspiciatis totam cupiditate molestiae, dolorum quibusdam tenetur quo impedit odio suscipit delectus placeat! Itaque, debitis.</article>
     <a href="/about-page">ABOUT</a>
@@ -35,7 +27,7 @@
                 </div>
               </div>
               <div class="user-status">
-                <p class="user-title">Co-Founder / CEO</p>
+                <p class="user-title">MIAW</p>
               </div>
             </li>
           </ul>
@@ -49,7 +41,7 @@
                 </div>
               </div>
               <div class="user-status">
-                <p class="user-title">Co-Founder / CEO</p>
+                <p class="user-title">MIAW</p>
               </div>
             </li>
           </ul>
@@ -63,7 +55,7 @@
                 </div>
               </div>
               <div class="user-status">
-                <p class="user-title">Co-Founder /  CEO</p>
+                <p class="user-title">MIAW</p>
               </div>
             </li>
           </ul>

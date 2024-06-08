@@ -7,15 +7,7 @@
     <link href="{{asset('css/buy.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <nav>
-        <div class="landing-title"><a href="/home">Ticket Online</a></div>
-        <ul>
-            <li><a href="/about-page">About</a></li>
-            <li><a href="/buy-page">Buy</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Log Out</a></li>
-        </ul>
-    </nav>
+    <x-navbar></x-navbar>
     <div>
         <form action="" method="post">
             <ul>

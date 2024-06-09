@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy</title>
+    <title>{{env('APP_NAME')}}</title>
     <link href="{{asset('css/buy.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>

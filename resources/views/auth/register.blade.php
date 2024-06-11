@@ -15,7 +15,7 @@
             <div class="title">Sign up</div>
             <form class="flip-card__form" action="{{route('register')}}" method="POST">
               @csrf
-              <input class="flip-card__input" placeholder="Name" type="name">
+              <input class="flip-card__input" placeholder="Name" name="name">
               @error('name')
                   <p class="error-message">{{$message}}</p>
               @enderror
@@ -27,6 +27,7 @@
               @error('password')
                   <p class="error-message">{{$message}}</p>
               @enderror
+              <input class="flip-card__input" name="password_confirmation" placeholder="Confirm Password" type="password">
               <button class="flip-card__btn">Confirm!</button>
             </form>
           </div>

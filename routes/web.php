@@ -14,7 +14,7 @@ Route::view('/register','auth.register')->name('register');
 
 Route::get('/',function(){
     return view('landing-page');
-});
+})->name('home');
 Route::get('/about-page',function(){
     return view('about-page');
 });

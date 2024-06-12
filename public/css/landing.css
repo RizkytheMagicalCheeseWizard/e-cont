@@ -44,6 +44,24 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
+.btn_logout{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding-top:1px;
+    font-size: 16px;
+}
+.btn_logout:hover{
+    color: red;
+    transition: .3s;
+}
+
 
 
 .user-item {

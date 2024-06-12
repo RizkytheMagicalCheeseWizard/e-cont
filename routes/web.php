@@ -18,6 +18,7 @@ Route::get('/',function(){
 Route::get('/admin',function(){
     return view ('admin');
 })->name('admin');
+Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 
 Route::get('/about-page',function(){
     return view('about-page');

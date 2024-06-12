@@ -10,16 +10,19 @@ use Illuminate\Validation\Validator;
 class AuthController extends Controller
 {
     public function login(Request $request){
-        $request->validate([
-            'email' => ['required', 'max:255'],
-            'password' => ['required','min:3']
-        ]);
         $fields = $request->validate([
             'email'=>['required','max:255','email'],
             'password'=>['required']
         ]);
-        Auth::attempt($fields);
-        return redirect()->route('home');
+        if(Auth::attempt($fields)){
+            if(Auth::user()-> role == 'administrator'){
+                return redirect()->route('admin');
+            }
+            else{
+                return redirect()->route('home');
+            }
+        }
+        
     }
     public function register(Request $request){
         $fields = $request->validate([

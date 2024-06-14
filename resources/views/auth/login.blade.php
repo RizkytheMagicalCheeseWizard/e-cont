@@ -25,7 +25,7 @@
                   @enderror
                   <button class="flip-card__btn">Let`s go!</button>
                 </form>
-                <a href={{route('register')}}>Belum Punya Akun?</a>
+                <++++++++++++++++++++++++++++++++++++++++/a>
               </div>
             </div>
             

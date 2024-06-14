@@ -20,7 +20,7 @@
           <ul role="list" class="divide-y divide-gray-100">
             <li class="user-item">
               <div class="user-info">
-                <img src="image/p.png" class="user-avatar">
+                <img src={{asset('image/p.png') }} class="user-avatar">
                 <div class="user-details">
                   <p class="user-name">Pandu</p>
                   <p class="user-email">pandu@gmail.com</p>
@@ -34,7 +34,7 @@
           <ul role="list" class="divide-y divide-gray-100">
             <li class="user-item">
               <div class="user-info">
-                <img src="image/r.png" class="user-avatar">
+                <img src={{asset('image/r.png')}} class="user-avatar">
                 <div class="user-details">
                   <p class="user-name">Rizky</p>
                   <p class="user-email">rizky@gmail.com</p>
@@ -48,7 +48,7 @@
           <ul role="list" class="divide-y divide-gray-100">
             <li class="user-item">
               <div class="user-info">
-                <img src="image/s.png" class="user-avatar">
+                <img src={{asset('image/s.png')}} class="user-avatar">
                 <div class="user-details">
                   <p class="user-name">Sulthon</p>
                   <p class="user-email">sulthon@gmail.com</p>

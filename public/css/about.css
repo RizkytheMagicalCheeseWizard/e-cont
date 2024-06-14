@@ -12,7 +12,7 @@ body{
 }
 .wrapper-gradient-border-radius{
     border-radius: 10px;
-    
+    background-color: cyan;
     padding: 20px;
 }
 .social-transition div{

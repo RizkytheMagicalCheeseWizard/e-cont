@@ -22,7 +22,7 @@ Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 
 Route::get('/about-page',function(){
     return view('about-page');
-});
+})->name('about');
 Route::get('/buy-page',function(){
     return view('buy-page');
-});
+})->name('buy');

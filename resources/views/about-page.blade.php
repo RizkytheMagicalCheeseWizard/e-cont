@@ -10,27 +10,27 @@
     <x-navbar></x-navbar>
     <div class="flex-to-center">
         <div class="wrapper-gradient-border-radius">
-            <div class="img">img</div>
+            <div class="img"><img></div>
             <div class="name">Pandu Adi</div>
             <div class="social-transition">
-                <div>IG</div>
-                <div>git</div>
+                <div><a href=""><img>@Pandu</a></div>
+                <div><a href=""><img>PappaIkan</a></div>
             </div>
         </div>
         <div class="wrapper-gradient-border-radius">
-            <div class="img">img</div>
+            <div class="img"><img></div>
             <div class="name">Rizky Maulana</div>
             <div class="social-transition">
-                <div>IG</div>
-                <div>git</div>
+                <div><a href=""><img>@Rizky</a></div>
+                <div><a href=""><img>RizkyTheMagicalCheeseWizard</a></div>
             </div>
         </div>
         <div class="wrapper-gradient-border-radius">
-            <div class="img">img</div>
+            <div class="img"><img></div>
             <div class="name">Sulthon Kaffah</div>
             <div class="social-transition">
-                <div>IG</div>
-                <div>git</div>
+                <div><a href=""><img>@Sulthon</a></div>
+                <div><a href=""><img src="" alt="">Sulthon</a></div>
             </div>
         </div>
     </div>

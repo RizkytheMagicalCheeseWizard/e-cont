@@ -8,12 +8,12 @@
 </head>
 <body>
     <x-navbar></x-navbar>
-    <div id="about">About</div>
+    <div id="about">About Us</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nulla rem debitis doloremque distinctio perspiciatis totam cupiditate molestiae, dolorum quibusdam tenetur quo impedit odio suscipit delectus placeat! Itaque, debitis.</article>
-    <a href="/about-page">ABOUT</a>
+    <a href={{route('about')}}>ABOUT</a>
     <div id="buy">Buy</div>
     <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt alias vitae reprehenderit asperiores quibusdam consequuntur, eveniet dolorum, quas nihil illo repudiandae ipsum aliquid corporis voluptatum iusto excepturi voluptate ab?</article>
-    <a href="/buy-page">BUY</a>
+    <a href={{route('buy')}}>BUY</a>
     <footer>
       <div id="contact">Contact</div>
         <section>
@@ -51,7 +51,7 @@
                 <img src="image/s.png" class="user-avatar">
                 <div class="user-details">
                   <p class="user-name">Sulthon</p>
-                  <p class="user-email">Sulthon@gmail.com</p>
+                  <p class="user-email">sulthon@gmail.com</p>
                 </div>
               </div>
               <div class="user-status">

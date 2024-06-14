@@ -27,7 +27,6 @@
                 </form>
                 <a href={{route('register')}}>Belum Punya Akun?</a>
               </div>
-              
             </div>
             
         </div>

@@ -11,6 +11,7 @@ nav{
     height: 70px;
     align-items: center;
     background-color: transparent;
+    position: sticky;
 }
 .landing-title{
     text-decoration: none;
@@ -115,11 +116,7 @@ nav ul li a:hover::before{
     color: #111827;
 }
 
-.last-seen {
-    margin-top: 4px;
-    font-size: 0.75rem;
-    color: #6b7280;
-}
+
 
 @media (min-width: 640px) {
     .user-status {

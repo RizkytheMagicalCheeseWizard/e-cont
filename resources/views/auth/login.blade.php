@@ -14,7 +14,7 @@
               <div class="flip-card__front">
                 <div class="title">Log in</div>
                 <form class="flip-card__form" action="{{route('login')}}" method="POST">
-                    @csrf
+                  @csrf
                   <input class="flip-card__input" name="email" placeholder="Email" type="email">
                   @error('email')
                       <p class="error-message">{{$message}}</p>
@@ -25,12 +25,10 @@
                   @enderror
                   <button class="flip-card__btn">Let`s go!</button>
                 </form>
+                <div><a href={{route('register')}}>Tidak punya akun?</a></div>
               </div>
             </div>
-            
         </div>
-        
       </div>
-      
 </body>
 </html>

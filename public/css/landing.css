@@ -62,9 +62,6 @@ nav ul li a:hover::before{
     color: red;
     transition: .3s;
 }
-
-
-
 .user-item {
     display: flex;
     justify-content: space-between;
@@ -115,9 +112,6 @@ nav ul li a:hover::before{
     font-size: 1rem;
     color: #111827;
 }
-
-
-
 @media (min-width: 640px) {
     .user-status {
         display: flex;

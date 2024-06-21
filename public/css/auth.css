@@ -51,7 +51,7 @@ body{
   }
   
   .title {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
     font-size: 25px;
     font-weight: 900;
     text-align: center;
@@ -102,4 +102,6 @@ body{
   .error-message{
     color: red;
     margin-top: 1px;
+    margin-left: 1px;
+    font-size: 12px;
   }

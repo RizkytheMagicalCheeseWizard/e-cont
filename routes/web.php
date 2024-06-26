@@ -14,7 +14,7 @@ Route::view('/register','auth.register')->name('register');
 
 Route::get('/',function(){
     return view('landing-page');
-})->name('home')->middleware('auth');
+})->name('home');
 Route::get('/admin',function(){
     return view ('admin');
 })->name('admin');

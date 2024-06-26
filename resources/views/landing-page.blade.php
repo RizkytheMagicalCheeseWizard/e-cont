@@ -8,13 +8,18 @@
 </head>
 <body>
     <x-navbar></x-navbar>
-    <div id="about">About Us</div>
-    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nulla rem debitis doloremque distinctio perspiciatis totam cupiditate molestiae, dolorum quibusdam tenetur quo impedit odio suscipit delectus placeat! Itaque, debitis.</article>
-    <a href={{route('about')}}>ABOUT</a>
-    <div id="buy">Buy</div>
-    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt alias vitae reprehenderit asperiores quibusdam consequuntur, eveniet dolorum, quas nihil illo repudiandae ipsum aliquid corporis voluptatum iusto excepturi voluptate ab?</article>
-    <a href={{route('buy')}}>BUY</a>
-    <footer>
+    <div class="card-about">
+      <div id="about">About Us</div>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nulla rem debitis doloremque distinctio perspiciatis totam cupiditate molestiae, dolorum quibusdam tenetur quo impedit odio suscipit delectus placeat! Itaque, debitis.</article>
+      <a href={{route('about')}}>ABOUT</a>
+    </div>
+    <div class="card-buy">
+      <div id="buy">Buy</div>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt alias vitae reprehenderit asperiores quibusdam consequuntur, eveniet dolorum, quas nihil illo repudiandae ipsum aliquid corporis voluptatum iusto excepturi voluptate ab?</article>
+      <a href={{route('buy')}}>BUY</a>  
+    </div> 
+    
+    <div class="card-contact"></div>
       <div id="contact">Contact</div>
         <section>
           <ul role="list" class="divide-y divide-gray-100">
@@ -60,6 +65,5 @@
             </li>
           </ul>
         </section>
-    </footer>
 </body>
 </html>

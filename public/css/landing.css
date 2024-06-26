@@ -120,3 +120,9 @@ nav ul li a:hover::before{
         justify-content: center;
     }
 }
+
+.card-about{
+    height: 500px;
+    align-content: center;
+    
+}

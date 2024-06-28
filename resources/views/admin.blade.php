@@ -8,6 +8,7 @@
     <link href="{{asset('css/admin.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    MIAW
+    <x-sidebar></x-sidebar>
+    
 </body>
 </html>

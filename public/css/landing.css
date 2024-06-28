@@ -5,63 +5,7 @@
 body{
     font-family: sans-serif;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    height: 70px;
-    align-items: center;
-    background-color: transparent;
-    position: sticky;
-}
-.landing-title{
-    text-decoration: none;
-    color: black;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin-left: 100px;
-    
-}
-nav ul li{   
-    margin-left: 50px;
-}
-nav ul li a{
-    position: relative;
-    text-decoration: none;
-    color: black;
-}
-nav ul li a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: blue;
-    transition: .4s;
-}
-nav ul li a:hover::before{
-    width: 100%;
-}
-.btn_logout{
-    display: block;
-    text-decoration: none;
-    color: #000;
-    position: relative;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
-    padding-top:1px;
-    font-size: 16px;
-}
-.btn_logout:hover{
-    color: red;
-    transition: .3s;
-}
+
 .user-item {
     display: flex;
     justify-content: space-between;

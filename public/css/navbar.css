@@ -15,7 +15,7 @@ nav{
 }
 .landing-title{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav ul{
     display: flex;
@@ -30,7 +30,7 @@ nav ul li{
 nav ul li a{
     position: relative;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav ul li a::before{
     content: '';
@@ -48,7 +48,7 @@ nav ul li a:hover::before{
 .btn_logout{
     display: block;
     text-decoration: none;
-    color: #000;
+    color: white;
     position: relative;
     background: none;
     border: none;

@@ -39,7 +39,7 @@ nav ul li a::before{
     left: 0;
     width: 0;
     height: 2px;
-    background: blue;
+    background: #19376D;
     transition: .4s;
 }
 nav ul li a:hover::before{

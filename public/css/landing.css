@@ -1,12 +1,12 @@
+
 * {
     margin: 0;
     padding: 0;
-}
+} 
 body{
-    font-family: sans-serif;
-    color: white;
+    color: white;    
     background-image: url('/image/space-bg.png');
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-repeat:no-repeat ;
 }

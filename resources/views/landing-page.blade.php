@@ -10,7 +10,7 @@
     <x-navbar></x-navbar>
     <div id="about" class="card-about">
       <div  class="title-about">About Us</div>
-      <article class="article-about">Kelompok Tiket Bis</article>
+      <article class="article-about">We Create Websites to Help People Buy Bus Tickets Online.</article>
       <img class="img-arrow" src="{{asset('image/arow-down.png')}}"> 
       <div><a class="to-about" href={{route('about')}}>ABOUT</a></div>
     </div>

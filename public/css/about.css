@@ -7,7 +7,7 @@ body{
     color: white;
     background-image: url('/image/space-bg.png');
     background-size:auto;
-    background-position: center;
+    background-position:top;
     background-repeat:no-repeat ;
 }
 .flex-to-center{

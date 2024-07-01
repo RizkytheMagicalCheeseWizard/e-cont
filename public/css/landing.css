@@ -6,8 +6,8 @@
 body{
     color: white;    
     background-image: url('/image/space-bg.png');
-    background-size:cover;
-    background-position: center;
+    background-size:auto;
+    background-position: top;
     background-repeat:no-repeat ;
 }
 .card-about{

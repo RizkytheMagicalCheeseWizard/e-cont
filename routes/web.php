@@ -16,7 +16,7 @@ Route::get('/',function(){
     return view('landing-page');
 })->name('home');
 Route::get('/admin',function(){
-    return view ('admin/admin');
+    return view ('admin.admin');
 })->name('admin');
 Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 

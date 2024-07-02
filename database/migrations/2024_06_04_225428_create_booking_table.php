@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('booking', function (Blueprint $table) {
+        Schema::create('bookings', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('jadwal_id');
             $table->unsignedInteger('type_ticket_id');
@@ -21,8 +21,8 @@ return new class extends Migration
             $table->decimal('total_price', 8, 2);
             $table->timestamp('booking_date')->nullable();
 
-            $table->foreign('jadwal_id')->references('id')->on('jadwal')->onDelete('cascade');
-            $table->foreign('type_ticket_id')->references('id')->on('type_ticket')->onDelete('cascade');
+            $table->foreign('jadwal_id')->references('id')->on('schedules')->onDelete('cascade');
+            $table->foreign('type_ticket_id')->references('id')->on('type_tickets')->onDelete('cascade');
             $table->foreign('users_email')->references('email')->on('users')->onDelete('cascade');
         });
     }

@@ -23,17 +23,23 @@
             <ul>
                 <li>Tujuan : 
                     <select>
-
+                      @foreach ($data_schedule as $schedule)
+                          <option value="{{$schedule->id}}">{{$schedule->city}}</option>
+                      @endforeach
                     </select>
                 </li>
                 <li>Jam Keberangkatan : 
                     <select>
-                        
+                        @foreach ($data_schedule as $schedule)
+                            <option value="{{$schedule->id}}">{{$schedule->jam_keberangkatan}}</option>
+                        @endforeach
                     </select>
                 </li>
                 <li>Kelas & Harga: 
                     <select>
-                        
+                        @foreach ($data_type as $type_ticket)
+                            <option value="{{$type_ticket->id}}">{{$type_ticket->class}} & Rp.{{number_format($type_ticket->price,2,'.',',')}}</option>
+                        @endforeach
                     </select>
                 </li>
                 <li>Booking Date : <input type="date"></li>

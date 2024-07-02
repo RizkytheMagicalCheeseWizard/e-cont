@@ -1,6 +1,13 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\JadwalController;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\Type_TicketsController;
+use App\Http\Controllers\TypeController;
+use App\Http\Controllers\TypeTicketController;
+use App\Http\Controllers\ViewController;
+use App\Models\TypeTicket;
 use Illuminate\Support\Facades\Route;
 
 
@@ -26,3 +33,5 @@ Route::get('/about-page',function(){
 Route::get('/buy-page',function(){
     return view('buy-page');
 })->name('buy');
+
+Route::get('/',[ViewController::class,'view']);

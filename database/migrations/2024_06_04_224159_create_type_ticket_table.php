@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('type_ticket', function (Blueprint $table) {
+        Schema::create('type_tickets', function (Blueprint $table) {
             $table->increments('id');
             $table->string('class');
             $table->decimal('price',8,2);

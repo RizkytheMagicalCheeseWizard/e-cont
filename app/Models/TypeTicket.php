@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class TypeTicket extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'id',
+        'class',
+        'price'
+    ];
     protected $type = 'type_tickets';
     protected $guarded = []; 
     public function booking(){

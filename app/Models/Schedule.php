@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Schedule extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'id',
+        'city',
+        'jam_keberangkatan'
+    ];
     protected $schedule = 'schedules';
     protected $guarded = [];
     public function booking(){

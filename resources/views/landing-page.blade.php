@@ -35,7 +35,8 @@
         <img class="img-arrow" src="{{asset('image/arow-down.png')}}">
         <div class="card-buy-form">
             <div class="title-buy">T i c k e t B u s</div>
-            <form action="" method="post">
+            <form action="{{route('booking')}}" method="post" class="form-buy">
+                @csrf
                 <ul>
                     <li class="form-group">
                         <label for="">City :</label> 
@@ -62,14 +63,14 @@
                         </select>
                     </li>
                     <li class="form-group">
-                        <label for="">Booking Date :</label> 
+                        <label for="">Booking Date:</label> 
                         <input type="date">
                     </li>
                     <li class="form-group">
-                        <label for="">Quantity :</label> 
+                        <label for="">Quantity:</label> 
                         <input type="text"></li>
                     <li class="form-group">
-                        <label for="">Total Price :</label> 
+                        <label for="">Total Price:</label> 
                         <input type="text" readonly>
                     </li>
                     <li>

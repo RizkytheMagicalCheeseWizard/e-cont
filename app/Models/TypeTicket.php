@@ -10,4 +10,7 @@ class TypeTicket extends Model
     use HasFactory;
     protected $type = 'type_tickets';
     protected $guarded = []; 
+    public function booking(){
+        return $this->hasMany(Booking::class);
+    }
 }

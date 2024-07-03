@@ -14,9 +14,8 @@ class ViewController extends Controller
         $data_schedule = Schedule::all();
 
         $data_type = TypeTicket::all();
-        $data_booking = Booking::all();
-
-        return view('landing-page',compact('data_schedule','data_type','data_booking'));
+        $data_booking = Booking::with(['user','schedule','typeticket'])->get();
+        return view('landing-page',compact('data_schedule','data_type','data_booking','data_booking'));
     }
     
 }

@@ -115,6 +115,31 @@ body {
     align-items: center;
     max-height: auto;
 }
+.card-table{
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    color: black;
+    align-items: center;
+    max-height: auto;
+
+}
+.title-table-booking{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.table-booking{
+    overflow-y: scroll;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+.table-booking tr td{
+    border: 1px solid black;
+    padding: 5px;
+}
 .article-buy{
     font-size: 30px;
 }
@@ -138,7 +163,7 @@ label {
     margin-right: 10px;
   }
 select, input {
-    flex: 3;
+    flex: 7;
     padding: 5px;
     width: 100%;
     box-sizing:content-box;

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="{{asset('js/landing.js')}}"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                     </li>
                     <li class="form-group">
                         <label for="booking_date">Booking Date:</label> 
-                        <input type="date" required name="booking_date">
+                        <input type="date" required name="booking_date" min="{{\Carbon\Carbon::tomorrow()->toDateString()}}">
                     </li>
                     <li class="form-group">
                         <label for="quantity">Quantity:</label> 
@@ -70,6 +71,36 @@
                 </ul>   
             </form>
         </div>
+    </div>
+    <div class="card-table">
+        <div class="title-table-booking">B o o k i ng L i s t</div>
+        <table class="table-booking">
+            <tr>
+                <td>ID</td>
+                <td>City & Departure Time</td>
+                <td>Class & Price</td>
+                <td>Account</td>
+                <td>Quantity</td>
+                <td>Total Price</td>
+                <td>Booking Date</td>
+                <td>Action</td>
+            </tr>
+                @foreach ($data_booking as $booking)
+            <tr>
+                    <td>{{$booking->id}}</td>
+                    <td>{{$booking->schedule->city}} & {{$booking->schedule->jam_keberangkatan}}</td>
+                    <td>{{$booking->typeticket->class}} & Rp.{{number_format($booking->typeticket->price)}}</td>
+                    <td>{{$booking->user->email}}</td>
+                    <td>{{$booking->quantity}}</td>
+                    <td>Rp.{{number_format($booking->total_price)}}</td>
+                    <td>{{$booking->booking_date}}</td>
+                    <td>
+                        <a href="{{route('reschedule',$booking->id)}}">Reschedule</a>
+                    </td>
+            </tr>
+                @endforeach
+            
+        </table>
     </div>
 
     <footer>

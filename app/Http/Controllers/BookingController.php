@@ -11,28 +11,23 @@ class BookingController extends Controller
 {
     //
     public function booking(Request $request){
-        $userid = Auth::id();
         $validate= $request->validate([
             'schedule_id' => 'required|exists:schedules,id',
-            'ticket_type_id' => 'required|exists:ticket_types,id',
+            'type_ticket_id' => 'required|exists:ticket_types,id',
             'booking_date' => 'required|date',
-            'quantity' => 'required|integer|min:1',
-            'total_price' => 'required|numeric|min:0'
+            'quantity' => 'required|integer|min:1'
         ]);
-        $typeticket = TypeTicket::findOrFail($request->ticket_type_id);
-        $price = $typeticket->price;
-
-
-        $total_price = $price * $request->quantity;
+        $userid = Auth::id();
+        $typeticket = TypeTicket::findOrFail($validate['type_ticket_id']);
+        $total_price = $validate['quantity'] * $typeticket->total_price;
         Booking::create([
             'jadwal_id' => $validate['jadwal_id'],
             'type_ticket_id' => $validate['type_ticket_id'],
-            'users_email' => Auth::user()->email,
+            'users_id' => $userid,
             'quantity' => $validate['quantity'],
             'total_price' => $total_price,
             'booking_date' => $validate['booking_date'],
-            'user_id' => $userid
         ]);
-        return redirect()->route('landing-page')->with('success');
+        return redirect('/')->with('success','Booking berhasil ditambahkan');
     }
 }

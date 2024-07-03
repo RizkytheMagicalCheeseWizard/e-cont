@@ -40,7 +40,8 @@
                 <ul>
                     <li class="form-group">
                         <label for="">City :</label> 
-                        <select>
+                        <select required>
+                                <option value="" disabled selected>Select City</option>
                             @foreach ($data_schedule as $schedule)
                                 <option value="{{$schedule->id}}">{{$schedule->city}}</option>
                             @endforeach
@@ -48,7 +49,8 @@
                     </li>
                     <li class="form-group">
                         <label for="">Departure Time : </label>
-                        <select>
+                        <select required>
+                                <option value="" disabled selected>Select Departure Time</option>
                             @foreach ($data_schedule as $schedule)
                                 <option value="{{$schedule->id}}">{{$schedule->jam_keberangkatan}}</option>
                             @endforeach
@@ -56,7 +58,8 @@
                     </li>
                     <li class="form-group">
                         <label for="">Class & Price:</label> 
-                        <select>
+                        <select required>
+                                <option value="" disabled selected>Select Class & Price</option>
                             @foreach ($data_type as $type_ticket)
                                 <option value="{{$type_ticket->id}}">{{$type_ticket->class}} & Rp.{{number_format($type_ticket->price,2,'.',',')}}</option>
                             @endforeach
@@ -64,11 +67,11 @@
                     </li>
                     <li class="form-group">
                         <label for="">Booking Date:</label> 
-                        <input type="date">
+                        <input type="date" required>
                     </li>
                     <li class="form-group">
                         <label for="">Quantity:</label> 
-                        <input type="text"></li>
+                        <input type="text" required></li>
                     <li class="form-group">
                         <label for="">Total Price:</label> 
                         <input type="text" readonly>

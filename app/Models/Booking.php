@@ -10,9 +10,9 @@ class Booking extends Model
     use HasFactory;
     protected $fillable = [
         'id',
-        'user_id',
-        'schedule_id',
-        'ticket_type_id',
+        'users_email',
+        'jadwal_id',
+        'type_ticket_id',
         'quantity',
         'total_price',
         'booking_date'
@@ -24,6 +24,6 @@ class Booking extends Model
         return $this->belongsTo(Schedule::class);
     }
     public function typeticket(){
-        return $this->belongsTo(TypeTicket::class,'ticket_type_id');
+        return $this->belongsTo(TypeTicket::class);
     }
 }

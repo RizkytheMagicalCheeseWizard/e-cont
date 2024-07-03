@@ -12,18 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('jadwal_id');
-            $table->unsignedInteger('type_ticket_id');
-            $table->string('users_email');
+            $table->id();
+            $table->unsignedBigInteger('jadwal_id');
+            $table->unsignedBigInteger('type_ticket_id');
+            $table->unsignedBigInteger('users_id');
             $table->timestamp('created_at')->nullable();
             $table->integer('quantity');
             $table->decimal('total_price', 8, 2);
-            $table->timestamp('booking_date')->nullable();
+            $table->timestamp('booking_date');
 
             $table->foreign('jadwal_id')->references('id')->on('schedules')->onDelete('cascade');
             $table->foreign('type_ticket_id')->references('id')->on('type_tickets')->onDelete('cascade');
-            $table->foreign('users_email')->references('email')->on('users')->onDelete('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

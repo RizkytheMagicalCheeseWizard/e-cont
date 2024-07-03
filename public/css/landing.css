@@ -113,8 +113,7 @@ body {
     color: black;
     padding-bottom: 20px;
     align-items: center;
-    
-    
+    max-height: auto;
 }
 .article-buy{
     font-size: 30px;

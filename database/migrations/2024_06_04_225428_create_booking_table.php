@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamp('created_at')->nullable();
             $table->integer('quantity');
             $table->decimal('total_price', 8, 2);
-            $table->timestamp('booking_date');
+            $table->date('booking_date');
 
             $table->foreign('jadwal_id')->references('id')->on('schedules')->onDelete('cascade');
             $table->foreign('type_ticket_id')->references('id')->on('type_tickets')->onDelete('cascade');

@@ -9,7 +9,6 @@ class TypeTicket extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id',
         'class',
         'price'
     ];

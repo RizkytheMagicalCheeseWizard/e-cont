@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <x-navbar></x-navbar>
     
@@ -39,45 +40,32 @@
                 @csrf
                 <ul>
                     <li class="form-group">
-                        <label for="">City :</label> 
-                        <select required>
-                                <option value="" disabled selected>Select City</option>
+                        <label for="schedule_city">City & Time:</label> 
+                        <select required name="schedule_id">
+                                <option value="" disabled selected>Select City & Departure Time</option>
                             @foreach ($data_schedule as $schedule)
-                                <option value="{{$schedule->id}}">{{$schedule->city}}</option>
+                                <option value="{{$schedule->id}}">{{$schedule->city}} & {{$schedule->jam_keberangkatan}}</option>
                             @endforeach
                         </select>
                     </li>
                     <li class="form-group">
-                        <label for="">Departure Time : </label>
-                        <select required>
-                                <option value="" disabled selected>Select Departure Time</option>
-                            @foreach ($data_schedule as $schedule)
-                                <option value="{{$schedule->id}}">{{$schedule->jam_keberangkatan}}</option>
-                            @endforeach
-                        </select>
-                    </li>
-                    <li class="form-group">
-                        <label for="">Class & Price:</label> 
-                        <select required>
+                        <label for="type_class&price">Class & Price:</label> 
+                        <select required name="type_ticket_id">
                                 <option value="" disabled selected>Select Class & Price</option>
                             @foreach ($data_type as $type_ticket)
-                                <option value="{{$type_ticket->id}}">{{$type_ticket->class}} & Rp.{{number_format($type_ticket->price,2,'.',',')}}</option>
+                                <option value="{{$type_ticket->id}}" data-price = "{{$type_ticket->price}}">{{$type_ticket->class}} & Rp.{{number_format($type_ticket->price,2,'.',',')}}</option>
                             @endforeach
                         </select>
                     </li>
                     <li class="form-group">
-                        <label for="">Booking Date:</label> 
-                        <input type="date" required>
+                        <label for="booking_date">Booking Date:</label> 
+                        <input type="date" required name="booking_date">
                     </li>
                     <li class="form-group">
-                        <label for="">Quantity:</label> 
-                        <input type="text" required></li>
-                    <li class="form-group">
-                        <label for="">Total Price:</label> 
-                        <input type="text" readonly>
-                    </li>
+                        <label for="quantity">Quantity:</label> 
+                        <input type="text" required name="quantity"></li>
                     <li>
-                        <button class="button-buy">Buy</button>
+                        <button type="submit" class="button-buy">Buy</button>
                     </li>
                 </ul>   
             </form>

@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
+
     use HasFactory;
+    public $timestamps = false;
     protected $fillable = [
         'jadwal_id',
         'type_ticket_id',
@@ -16,7 +18,6 @@ class Booking extends Model
         'total_price',
         'booking_date'
     ];
-    protected $booking = 'bookings'; 
     public function user(){
         return $this->belongsTo(User::class,'users_id');
     }

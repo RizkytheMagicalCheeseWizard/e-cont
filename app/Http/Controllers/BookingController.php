@@ -17,9 +17,8 @@ class BookingController extends Controller
             'type_ticket_id' => 'required|exists:type_tickets,id',
             'booking_date' => 'required|date',
             'quantity' => 'required|integer|min:1',
-            'total_price' => 'required|numeric|min:0'
         ]);
-        if(!isset($validate['total_price'])){
+        if(!isset($request->total_price)){
             $typeticket = TypeTicket::findOrFail($validate['type_ticket_id']);
             $validate['total_price'] = $validate['quantity'] * $typeticket->price;
         }

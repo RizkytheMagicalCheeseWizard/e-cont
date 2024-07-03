@@ -41,7 +41,7 @@
                 <ul>
                     <li class="form-group">
                         <label for="schedule_city">City & Time:</label> 
-                        <select required name="schedule_id">
+                        <select required name="jadwal_id">
                                 <option value="" disabled selected>Select City & Departure Time</option>
                             @foreach ($data_schedule as $schedule)
                                 <option value="{{$schedule->id}}">{{$schedule->city}} & {{$schedule->jam_keberangkatan}}</option>

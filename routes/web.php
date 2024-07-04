@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ViewController;
@@ -9,6 +10,7 @@ Route::post('/login',[AuthController::class, 'login']);
 Route::post('/register',[AuthController::class, 'register']);
 Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 Route::middleware('auth')->post('/', [BookingController::class, 'booking'])->name('booking');
+Route::middleware('auth')->post('/admin/schedule', [AdminController::class, 'insert_schedule'])->name('insert_schedule');
 Route::view('/login','auth.login')->name('login');
 Route::view('/register','auth.register')->name('register');
 Route::view('/','landing-page');

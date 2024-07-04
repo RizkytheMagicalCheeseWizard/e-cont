@@ -24,7 +24,7 @@ class ViewController extends Controller
         $data_schedule = Schedule::all();
         $data_type = TypeTicket::all();
 
-        return view('admin.schedule',compact('data_schedule','data_type','data_booking','data_user'));
+        return view('admin.schedule',compact('data_schedule','data_type'));
     }
     public function view_client(){
         $data_user = User::where('role','member')->get();

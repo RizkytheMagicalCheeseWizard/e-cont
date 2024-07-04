@@ -56,7 +56,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90vmin;
-    /* z-index: 1;  */
 }
 .animated-title > div {
     height: 50%;
@@ -98,61 +97,86 @@ body {
 }
 .text-animation-section {
     position: relative;
-    height: 40vh; /* Ensures it takes up the full viewport height */
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50vh;
 }
 
-.card-buy-form{
+.card-buy-form {
     border-radius: 5px;
-    background-color: white;
-    margin-right: 350px;
-    margin-left: 350px;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.077);
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
     padding-bottom: 20px;
     align-items: center;
     max-height: auto;
+    width: 60%;
+    box-sizing: border-box;
 }
-.card-table{
+@media (max-width: 768px) {
+    .card-buy-form {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .card-buy-form {
+        width: 95%;
+    }
+    .form-buy {
+        width: 100%;
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    label, select, input {
+        width: 100%;
+    }
+}
+.card-table {
     border-radius: 5px;
-    background-color: white;
-    margin-right: 200px;
-    margin-left: 200px;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.077);
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
     align-items: center;
     max-height: auto;
-
+    width: 80%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.title-table-booking{
+.title-table-booking {
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.table-booking{
-    overflow-y: scroll;
-    text-align: center;
-    padding: 0px 20px 20px 20px;
+.table-booking-wrapper {
+    overflow-x: auto;
 }
-.table-booking tr td{
-    border: 1px solid black;
+.table-booking {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+}
+.table-booking tr td {
+    border: 1px solid rgb(255, 255, 255);
     padding: 5px;
 }
-.article-buy{
+.article-buy {
     font-size: 30px;
 }
-.title-buy{
+.title-buy {
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
-    
 }
-li{
+li {
     list-style-type: none;
 }
-.form-group{
+.form-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,30 +185,33 @@ li{
 label {
     flex: 3;
     margin-right: 10px;
-  }
+}
 select, input {
     flex: 7;
     padding: 5px;
     width: 100%;
-    box-sizing:content-box;
+    box-sizing: content-box;
 }
-.form-buy{
+.form-buy {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin: 0 auto;
 }
-.button-buy{
+.button-buy {
     border: none;
     background-color: green;
-    padding:10px 20px 10px 20px; 
+    padding: 10px 20px;
     border-radius: 25px;
     color: white;
 }
-.button-reschedule{
-    text-decoration: none;
-    color: white;
-    background-color: green;
-    border-radius: 5px;
-    padding: 5px;
+@media (max-width: 768px) {
+    .table-booking {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .table-booking {
+        width: 100%;
+    }
 }

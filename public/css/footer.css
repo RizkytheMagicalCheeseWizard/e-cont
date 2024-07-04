@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    background-image: url('/image/space-bg.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    background-color: #343030;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding-top: 35vh;
+  }
+  
+  .landing-title {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 100px;
+  }
+  
+  footer ul li {
+    margin-left: 50px;
+  }
+  
+  footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer ul li a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #19376D;
+    transition: .4s;
+  }
+  
+  footer ul li a:hover::before {
+    width: 100%;
+  }
+  

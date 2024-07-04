@@ -95,7 +95,7 @@
                     <td>Rp.{{number_format($booking->total_price)}}</td>
                     <td>{{$booking->booking_date}}</td>
                     <td>
-                        <a href="{{route('reschedule',$booking->id)}}">Reschedule</a>
+                        <a class="button-reschedule" href="{{route('reschedule',$booking->id)}}">Reschedule</a>
                     </td>
             </tr>
                 @endforeach

@@ -18,7 +18,13 @@ class BookingController extends Controller
         $validate= $request->validate([
             'jadwal_id' => 'required|exists:schedules,id',
             'type_ticket_id' => 'required|exists:type_tickets,id',
-            'booking_date' => 'required|date',
+            'booking_date' => ['required','date',
+            function ($attribute,$value,$fail){
+                if(Carbon::parse($value)->lte(Carbon::today())){
+                    $fail('The booking date must be a future date');
+                }
+            }
+        ],
             'quantity' => 'required|integer|min:1',
         ]);
         if(!isset($request->total_price)){
@@ -32,16 +38,7 @@ class BookingController extends Controller
             'users_id' => Auth::id(),
             'quantity' => $validate['quantity'],
             'total_price' => $validate['total_price'],
-            'booking_date' => [
-                'required',
-                'date',
-                function ($attribute,$value,$fail){
-                    if(Carbon::parse($value)->lte(Carbon::today())){
-                        $fail('The booking date must be a future date');
-                    }
-                }
-        
-            ],
+            'booking_date' => $validate['booking_date']
         ]);
 
         return redirect('/');

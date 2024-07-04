@@ -7,6 +7,7 @@ use App\Models\Schedule;
 use App\Models\TypeTicket;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ViewController extends Controller
 {
@@ -15,7 +16,7 @@ class ViewController extends Controller
         $data_schedule = Schedule::all();
         $data_user = User::all();
         $data_type = TypeTicket::all();
-        $data_booking = Booking::with(['user','schedule','typeticket'])->get();
+        $data_booking = Booking::where('users_id',Auth::id())-> with(['schedule','typeticket','user'])->get();
 
         return view('landing-page',compact('data_schedule','data_type','data_booking','data_user'));
     }

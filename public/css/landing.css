@@ -181,3 +181,10 @@ select, input {
     border-radius: 25px;
     color: white;
 }
+.button-reschedule{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+}

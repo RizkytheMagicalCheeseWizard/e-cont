@@ -10,7 +10,7 @@
 <body>
     <x-sidebar></x-sidebar>
     <div class="container">
-        <h2>Insert Ticket Type</h2>
+        <h2>Ticket Type</h2>
         <table>
             <thead>
                 <tr>
@@ -24,8 +24,8 @@
                     <tr>
                         <td>{{$type->class}}</td>
                         <td>Rp.{{number_format($type->price)}}</td>
-                        <td>
-                            <a href="{{route('edit_type',$type->id)}}">Edit</a>
+                        <td class="btn-to-schedule">
+                            <a class="to-schedule" href="{{route('edit_type',$type->id)}}">Edit</a>
                         </td>
                     </tr>
                 @endforeach

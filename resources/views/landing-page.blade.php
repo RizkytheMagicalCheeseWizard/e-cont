@@ -77,7 +77,6 @@
         <div class="table-booking-wrapper">
             <table class="table-booking">
                 <tr>
-                    <td>ID</td>
                     <td>City & Departure Time</td>
                     <td>Class & Price</td>
                     <td>Account</td>
@@ -88,7 +87,6 @@
                 </tr>
                 @foreach ($data_booking as $booking)
                 <tr>
-                    <td>{{$booking->id}}</td>
                     <td>{{$booking->schedule->city}} & {{$booking->schedule->jam_keberangkatan}}</td>
                     <td>{{$booking->typeticket->class}} & Rp.{{number_format($booking->typeticket->price)}}</td>
                     <td>{{$booking->user->email}}</td>

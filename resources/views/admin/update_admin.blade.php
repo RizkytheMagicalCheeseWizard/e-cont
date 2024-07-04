@@ -21,12 +21,15 @@
             <div class="form-group">
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
+            <button type="submit" class="btn btn-primary">Edit</button>
         </form>
         <br>
-        <div class="gyat">
-            <button type="submit" class="btn btn-primary">Edit</button>
+        <form action="{{ route('delete_schedule', $data_schedule->id) }}" method="POST" onsubmit="return confirm('Delete this?');">
+            @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-primary" onclick="return confirm('Delete this?')">Delete</button>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+            
         </div>
 
     </div>

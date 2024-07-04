@@ -21,6 +21,8 @@
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
             <button type="submit">Edit</button>
+            @method('DELETE')
+            <button type="submit" onclick="return confirm('Delete this?')">Delete</button>
         </form>
     </div>
 </body>

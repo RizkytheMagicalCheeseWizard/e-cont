@@ -34,5 +34,10 @@ class AdminController extends Controller
         return redirect('/admin/schedule');
 
     }
+    public function delete_schedule($id){
+        $data_schedule = Schedule::findOrFail($id);
+        $data_schedule->delete();
+        return redirect('/admin/schedule');
+    }
 
 }

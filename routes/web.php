@@ -25,3 +25,5 @@ Route::get('/admin/schedule',[ViewController::class,'view_schedule'])->name('adm
 Route::get('/admin/client',[ViewController::class,'view_client'])->name('admin.client');
 Route::put('/{id}',[BookingController::class,'update'])->name('update');
 Route::put('/admin/schedule/{id}',[AdminController::class,'update_schedule'])->name('update_schedule');
+
+Route::delete('/admin/schedule/{id}',[AdminController::class,'delete_schedule'])->name('delete_schedule');

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="{{asset('js/landing.js')}}"></script>
 </head>
 
 <body>
@@ -72,20 +73,21 @@
         </div>
     </div>
     <div class="card-table">
-        <div class="title-table-booking">B o o k i ng L i s t</div>
-        <table class="table-booking">
-            <tr>
-                <td>ID</td>
-                <td>City & Departure Time</td>
-                <td>Class & Price</td>
-                <td>Account</td>
-                <td>Quantity</td>
-                <td>Total Price</td>
-                <td>Booking Date</td>
-                <td>Action</td>
-            </tr>
+        <div class="title-table-booking">B o o k i n g L i s t</div>
+        <div class="table-booking-wrapper">
+            <table class="table-booking">
+                <tr>
+                    <td>ID</td>
+                    <td>City & Departure Time</td>
+                    <td>Class & Price</td>
+                    <td>Account</td>
+                    <td>Quantity</td>
+                    <td>Total Price</td>
+                    <td>Booking Date</td>
+                    <td>Action</td>
+                </tr>
                 @foreach ($data_booking as $booking)
-            <tr>
+                <tr>
                     <td>{{$booking->id}}</td>
                     <td>{{$booking->schedule->city}} & {{$booking->schedule->jam_keberangkatan}}</td>
                     <td>{{$booking->typeticket->class}} & Rp.{{number_format($booking->typeticket->price)}}</td>
@@ -94,25 +96,14 @@
                     <td>Rp.{{number_format($booking->total_price)}}</td>
                     <td>{{$booking->booking_date}}</td>
                     <td>
-                        <a class="button-reschedule" href="{{route('reschedule',$booking->id)}}">Reschedule</a>
+                        <a href="{{route('reschedule',$booking->id)}}">Reschedule</a>
                     </td>
-            </tr>
+                </tr>
                 @endforeach
-            
-        </table>
+            </table>
+        </div>
     </div>
 
-    <footer>
-        <div class="left-side">
-            <div class="">E-Cont</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt unde consequatur dolor amet, nostrum, fugit ex, repellat expedita dolores consequuntur necessitatibus ut quia. Cupiditate voluptatem odit tenetur amet at.</div>
-        </div>
-        <div class="center-side">
-            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cupiditate quam totam, atque quae harum sit suscipit nostrum consequatur dolor, aliquam veniam, provident necessitatibus nesciunt? Nisi modi assumenda ex numquam!</div>
-        </div>
-        <div class="github-link">
-            <div></div>
-        </div>
-    </footer> 
+    <x-footer></x-footer>
 </body>
 </html>

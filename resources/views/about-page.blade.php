@@ -8,6 +8,7 @@
 </head>
 <body>
     <x-navbar></x-navbar>
+    <div class="container">
     <div class="flex-to-center">
         <div class="wrapper-gradient-border-radius">
             <div class="img"><img></div>
@@ -34,5 +35,7 @@
             </div>
         </div>
     </div>
+    </div>
+    <x-footer></x-footer>
 </body>
 </html>

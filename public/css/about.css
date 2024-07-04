@@ -10,6 +10,11 @@ body{
     background-position:top;
     background-repeat:no-repeat ;
 }
+
+.container{
+    padding-top: 22vh;
+}
+
 .flex-to-center{
     display: flex;
     justify-content: space-around;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{env('APP_NAME')}}</title>
+    <link rel="stylesheet" href="{{asset('css/edit_schedule.css')}}">
 </head>
 <body>
     <x-sidebar></x-sidebar>
@@ -20,8 +21,13 @@
             <div class="form-group">
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
-            <button type="submit">Edit</button>
         </form>
+        <br>
+        <div>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
     </div>
+
+    <x-footer></x-footer>
 </body>
 </html>

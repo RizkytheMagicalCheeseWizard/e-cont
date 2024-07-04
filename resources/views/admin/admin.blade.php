@@ -10,5 +10,7 @@
 <body>
     <x-sidebar></x-sidebar>
     
+
+    <x-footer></x-footer>
 </body>
 </html>

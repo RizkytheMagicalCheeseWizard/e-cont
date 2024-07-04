@@ -10,16 +10,16 @@
 <body>
     <x-sidebar></x-sidebar>
     <div class="container">
-        <h2>Edit Schedule</h2>
-        <form action="{{route('update_schedule',$data_schedule->id)}}" method="post">
+        <h2>Edit Ticket Type</h2>
+        <form action="{{route('update_type',$data_type->id)}}" method="post">
             @csrf
             @method('PUT')
             <div class="form-group">
-                <label for="">City</label>
-                <input type="text" name="city" value="{{$data_schedule->city}}" required>
+                <label for="">Class</label>
+                <input type="text" name="class" value="{{$data_type->class}}" required>
             </div>
             <div class="form-group">
-                <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
+                <input type="text" name="price" value="{{number_format($data_type->price)}}" required>
             </div>
         </form>
         <br>

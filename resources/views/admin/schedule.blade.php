@@ -35,7 +35,7 @@
             <div class="title-insert">
                 <h3>Add New Schedule</h3>
             </div>
-            <form action="{{route('insert_schedule')}}" method="POST">
+            <form action="{{route('insert_schedule')}}" method="post">
                 @csrf
                 <div class="form-group">
                     <label for="schedule_city">City :</label>
@@ -48,9 +48,6 @@
                 <button type="submit" class="button-insert">Insert</button>
             </form>
         </div>
-        <table class="container">
-
-        </table>
     </div>
     <x-footer></x-footer>
 </body>

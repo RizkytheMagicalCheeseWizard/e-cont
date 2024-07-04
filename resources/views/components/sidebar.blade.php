@@ -3,6 +3,7 @@
 <div id="mySidebar" class="sidebar">
     <a href="{{route('admin')}}" class="text-bar">Dashboard</a>
     <a href="{{route('admin.schedule')}}" class="text-bar">Schedule</a>
+    <a href="{{route('admin.ticket')}}" class="text-bar">Type Ticket</a>
     <a href="{{route('admin.client')}}" class="text-bar">Client</a>
     <form action={{route('logout')}} method="POST">
         @csrf

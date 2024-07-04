@@ -13,7 +13,6 @@ footer {
     height: 70px;
     background-color: #02144f;
     position: sticky;
-    z-index: 1000;
     top: 0;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;

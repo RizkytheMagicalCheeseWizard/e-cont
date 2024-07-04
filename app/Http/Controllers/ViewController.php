@@ -22,9 +22,11 @@ class ViewController extends Controller
     }
     public function view_schedule(){
         $data_schedule = Schedule::all();
+        return view('admin.schedule',compact('data_schedule'));
+    }
+    public function view_ticket(){
         $data_type = TypeTicket::all();
-
-        return view('admin.schedule',compact('data_schedule','data_type'));
+        return view('admin.ticket',compact('data_type'));
     }
     public function view_client(){
         $data_user = User::where('role','member')->get();

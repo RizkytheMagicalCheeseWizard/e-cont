@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Schedule extends Model
 {
     use HasFactory;
+    public $timestamps = false;
     protected $fillable = [
         'city',
         'jam_keberangkatan'

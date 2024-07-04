@@ -18,7 +18,7 @@
         <tr>
             <td>{{$schedule->city}}</td>
             <td>{{$schedule->jam_keberangkatan}}</td>
-            <td></td>
+            <td><a href=""> </a> <a href=""></a></td>
         </tr>
         @endforeach
     </table>
@@ -29,11 +29,11 @@
             <ul>
                 <li>
                     <label for="">City :</label>
-                    <input type="text" name="schedule_city" required>
+                    <input type="text" name="city" required>
                 </li>
                 <li>
                     <label for="">Departure Time :</label>
-                    <input type="text" name="schedule_time" required>
+                    <input type="text" name="jam_keberangkatan" required>
                 </li>
                 <li>
                     <button type="submit" class="button-insert">Insert</button>

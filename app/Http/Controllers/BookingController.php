@@ -11,10 +11,8 @@ use Illuminate\Support\Facades\Auth;
 
 class BookingController extends Controller
 {
-    //
     
     public function booking(Request $request){
-        
         $validate= $request->validate([
             'jadwal_id' => 'required|exists:schedules,id',
             'type_ticket_id' => 'required|exists:type_tickets,id',
@@ -31,7 +29,6 @@ class BookingController extends Controller
             $typeticket = TypeTicket::findOrFail($validate['type_ticket_id']);
             $validate['total_price'] = $validate['quantity'] * $typeticket->price;
         }
-        
         $booking = Booking::create([
             'jadwal_id' => $validate['jadwal_id'],
             'type_ticket_id' => $validate['type_ticket_id'],

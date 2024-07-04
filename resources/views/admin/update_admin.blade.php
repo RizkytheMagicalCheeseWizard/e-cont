@@ -21,17 +21,14 @@
             <div class="form-group">
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
-<<<<<<< HEAD
-            <button type="submit">Edit</button>
-            @method('DELETE')
-            <button type="submit" onclick="return confirm('Delete this?')">Delete</button>
-=======
->>>>>>> refs/remotes/origin/main
         </form>
         <br>
         <div>
             <button type="submit" class="btn btn-primary">Edit</button>
+            @method('DELETE')
+            <button type="submit" class="btn btn-primary" onclick="return confirm('Delete this?')">Delete</button>
         </div>
+
     </div>
 
     <x-footer></x-footer>

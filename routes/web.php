@@ -19,7 +19,7 @@ Route::view('/about-us','about-page')->name('about');
 Route::view('/admin/schedule','admin.schedule');
 Route::view('/admin/client','admin.client');
 Route::get('/{id}/reschedule', [BookingController::class,'edit'])->name('reschedule');
-Route::get('/{id}/edit',[AdminController::class,'edit_schedule'])->name('edit_schedule');
+Route::get('/admin/schedule/{id}/edit',[AdminController::class,'edit_schedule'])->name('edit_schedule');
 Route::get('/',[ViewController::class,'view_user']);
 Route::get('/admin/schedule',[ViewController::class,'view_schedule'])->name('admin.schedule');
 Route::get('/admin/client',[ViewController::class,'view_client'])->name('admin.client');

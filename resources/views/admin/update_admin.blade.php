@@ -10,7 +10,7 @@
     <x-sidebar></x-sidebar>
     <div class="container">
         <h2>Edit Schedule</h2>
-        <form action="{{route('update_schedule',$data_schedule->id)}}" method="POST">
+        <form action="{{route('update_schedule',$data_schedule->id)}}" method="post">
             @csrf
             @method('PUT')
             <div class="form-group">
@@ -20,6 +20,7 @@
             <div class="form-group">
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
+            <button type="submit">Edit</button>
         </form>
     </div>
 </body>

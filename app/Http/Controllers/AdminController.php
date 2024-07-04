@@ -19,7 +19,7 @@ class AdminController extends Controller
     }
     public function edit_schedule($id){
         $data_schedule = Schedule::findOrFail($id);
-        return view('edit_schedule',compact('data_schedule'));
+        return view('admin.update_admin',compact('data_schedule'));
     }
     public function update_schedule(Request $request,$id){
         $data_schedule = Schedule::findOrFail($id);
@@ -30,6 +30,8 @@ class AdminController extends Controller
         $data_schedule->city = $validate['city'];
         $data_schedule->jam_keberangkatan = $validate['jam_keberangkatan'];
         $data_schedule->save();
+        
+        return redirect('/admin/schedule');
 
     }
 

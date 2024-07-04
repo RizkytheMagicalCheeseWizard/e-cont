@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label for="quantity">Quantity:</label>
-                <input type="number" class="form-control" id="quantity" name="quantity" value="{{ $data_booking->quantity }}" required>
+                <input type="number" class="form-control" id="quantity" name="quantity" value="{{ $data_booking->quantity}}" required>
             </div>
             <button type="submit" class="btn btn-primary">Update</button>
         </form>

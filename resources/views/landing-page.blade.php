@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <script src="{{asset('js/landing.js')}}"></script>
+    
 </head>
 
 <body>
@@ -94,7 +94,7 @@
                     <td>Rp.{{number_format($booking->total_price)}}</td>
                     <td>{{$booking->booking_date}}</td>
                     <td>
-                        <a href="{{route('reschedule',$booking->id)}}">Reschedule</a>
+                        <a class="to-reschedule" href="{{route('reschedule',$booking->id)}}">Reschedule</a>
                     </td>
                 </tr>
                 @endforeach

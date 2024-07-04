@@ -9,6 +9,10 @@ body{
     background-size:auto;
     background-position:top;
     background-repeat:no-repeat ;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .container{

@@ -2,7 +2,10 @@ body{
     display: grid;
     place-items: center;
     height: 50vh;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
   }
   .wrapper {
     --input-focus: #2d8cf0;

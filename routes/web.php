@@ -15,7 +15,7 @@ Route::middleware('auth')->post('/admin/ticket',[AdminController::class,'insert_
 Route::view('/login','auth.login')->name('login');
 Route::view('/register','auth.register')->name('register');
 Route::view('/','landing-page');
-Route::view('/admin','admin.admin')->name('admin'); 
+Route::view('/admin','admin.admin'); 
 Route::view('/about-us','about-page')->name('about');
 Route::view('/admin/schedule','admin.schedule');
 Route::view('/admin/ticket','admin.ticket');
@@ -27,6 +27,7 @@ Route::get('/',[ViewController::class,'view_user']);
 Route::get('/admin/schedule',[ViewController::class,'view_schedule'])->name('admin.schedule');
 Route::get('/admin/ticket',[ViewController::class,'view_ticket'])->name('admin.ticket');
 Route::get('/admin/client',[ViewController::class,'view_client'])->name('admin.client');
+Route::get('/admin',[ViewController::class,'view_booker'])->name('admin');
 Route::put('/{id}',[BookingController::class,'update'])->name('update');
 Route::put('/admin/schedule/{id}',[AdminController::class,'update_schedule'])->name('update_schedule');
 Route::put('/admin/ticket/{id}',[AdminController::class,'update_type'])->name('update_type');

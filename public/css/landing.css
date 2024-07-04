@@ -215,3 +215,14 @@ select, input {
         width: 100%;
     }
 }
+.to-reschedule{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+    transition: .5s;
+}
+.to-reschedule:hover{
+    background-color: green;
+}

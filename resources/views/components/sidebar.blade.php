@@ -1,4 +1,7 @@
 <link href="{{asset('css/sidebar.css')}}" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
 <div id="mySidebar" class="sidebar">
     <a href="{{route('admin')}}" class="text-bar">Dashboard</a>

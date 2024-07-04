@@ -33,5 +33,12 @@ class ViewController extends Controller
 
         return view('admin.client',compact('data_user'));
     }
-    
+    public function view_booker(){
+        $data_schedule = Schedule::all();
+        $data_user = User::all();
+        $data_type = TypeTicket::all();
+        $data_booking = Booking::with(['schedule','typeticket','user'])->get();
+
+        return view('admin.admin',compact('data_schedule','data_type','data_booking','data_user'));
+    }
 }

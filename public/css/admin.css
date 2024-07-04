@@ -16,8 +16,8 @@ body {
 }
 .card-booking,.card-totalprice{
     border-radius: 5px;
-    background-color: white;
-    color: black;
+    background-color: #1A212B;
+    color: white;
     padding: 10px;
 }
 .result{

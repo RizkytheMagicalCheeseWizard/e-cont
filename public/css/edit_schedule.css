@@ -77,7 +77,13 @@ h2 {
 .btn:hover {
     background-color: darkgreen;
 }
-
+.btn-danger{
+    background-color: red;
+    transition: .5s;
+}
+.btn-danger:hover{
+    background-color: darkred;
+}
 @media (max-width: 768px) {
     .container {
         width: 90%;

@@ -24,6 +24,7 @@
             <div class="form-group">
                 <input type="text" name="jam_keberangkatan" value="{{$data_schedule->jam_keberangkatan}}" required>
             </div>
+            <br>
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
         <br>

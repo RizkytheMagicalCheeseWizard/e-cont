@@ -7,7 +7,7 @@
         <ul>
             <li><a href="{{route('about')}}">About</a></li>
             <li><a href="/#buy">Buy</a></li>
-            <li><a href="/#source-code">Source</a></li>
+            <li><a href="https://github.com/RizkytheMagicalCheeseWizard/e-cont">Source</a></li>
             <li>
                 <form action={{route('logout')}} method="POST">
                     @csrf

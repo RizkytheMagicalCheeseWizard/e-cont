@@ -2,9 +2,12 @@
 
 <div id="mySidebar" class="sidebar">
     <a href="{{route('admin')}}" class="text-bar">Dashboard</a>
-    <a href="{{route('schedule')}}" class="text-bar">Schedule</a>
-    <a href="/client" class="text-bar">Client</a>
-    <a href="#" class="text-bar">Log Out</a>
+    <a href="{{route('admin.schedule')}}" class="text-bar">Schedule</a>
+    <a href="{{route('admin.client')}}" class="text-bar">Client</a>
+    <form action={{route('logout')}} method="POST">
+        @csrf
+        <button class="btn_logout">Log Out</button>
+    </form>
 </div>
 <div id="main">
     <button class="button_sidebar" id="toggleButton" style="font-size:20px" onclick="toggleNav()">☰</button>

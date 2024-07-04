@@ -14,6 +14,7 @@ Route::view('/register','auth.register')->name('register');
 Route::view('/','landing-page')->name('home');
 Route::view('/admin','admin.admin')->name('admin'); 
 Route::view('/about-us','about-page')->name('about');
+Route::view('/schedule','admin.schedule')->name('schedule');
 Route::get('/{id}/reschedule', [BookingController::class,'edit'])->name('reschedule');
 Route::get('/',[ViewController::class,'view']);
 Route::put('/{id}',[BookingController::class,'update'])->name('update');

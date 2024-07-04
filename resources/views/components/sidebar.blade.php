@@ -1,8 +1,8 @@
 <link href="{{asset('css/sidebar.css')}}" rel="stylesheet" type="text/css">
 
 <div id="mySidebar" class="sidebar">
-    <a href="/admin" class="text-bar">Dashboard</a>
-    <a href="/schedule" class="text-bar">Schedule</a>
+    <a href="{{route('admin')}}" class="text-bar">Dashboard</a>
+    <a href="{{route('schedule')}}" class="text-bar">Schedule</a>
     <a href="/client" class="text-bar">Client</a>
     <a href="#" class="text-bar">Log Out</a>
 </div>

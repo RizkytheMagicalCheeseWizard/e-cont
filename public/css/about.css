@@ -2,30 +2,82 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: sans-serif;
     color: white;
     background-image: url('/image/space-bg.png');
-    background-size:auto;
-    background-position:top;
-    background-repeat:no-repeat ;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #2e4057;
+    margin: 0;
 }
 
-.container{
+.container {
     padding-top: 22vh;
 }
 
-.flex-to-center{
+.flex-to-center {
     display: flex;
     justify-content: space-around;
-    margin-top:50px ;
+    margin-top: 50px;
 }
-.wrapper-gradient-border-radius{
+
+.wrapper-gradient-border-radius {
     border-radius: 10px;
-    background-color: cyan;
+    background-color: rgba(255, 255, 255, 0.407);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
-.social-transition div{
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.img {
+    position: relative;
+    width: 23vh;
+    height: 23vh;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid #ffffff; /* Border color for the circle */
+    animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+        fill: hsl(189, 68%, 75%);
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: -20%;
+        fill: hsla(189, 68%, 75%, 0%);
+    }
+}
+
+.social-transition div {
     display: flex;
     padding: 5px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: black;
 }

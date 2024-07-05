@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>{{ env('APP_NAME') }}</title>
     <link href="{{ asset('css/about.css') }}" rel="stylesheet" type="text/css">
+=======
+    <title>{{env('APP_NAME')}}</title>
+    <link href="{{asset('css/about.css')}}" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lilita+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+>>>>>>> 9d1816f079bc3440718b95e9e37336b6ddd2e15d
 </head>
 
 <body>

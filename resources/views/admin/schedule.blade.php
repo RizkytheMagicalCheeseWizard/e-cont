@@ -10,7 +10,7 @@
 <body>
     <x-sidebar></x-sidebar>
     <div class="container">
-        <h2>Insert Schedule</h2>
+        <h2>Schedule</h2>
         <table>
             <thead>
                 <tr>
@@ -24,8 +24,8 @@
                 <tr>
                     <td>{{$schedule->city}}</td>
                     <td>{{$schedule->jam_keberangkatan}}</td>
-                    <td>
-                        <a href="{{route('edit_schedule',$schedule->id)}}">Edit</a>
+                    <td class="btn-to-schedule">
+                        <a class="to-schedule" href="{{route('edit_schedule',$schedule->id)}}">Edit</a>
                     </td>
                 </tr>
                 @endforeach
@@ -35,7 +35,7 @@
             <div class="title-insert">
                 <h3>Add New Schedule</h3>
             </div>
-            <form action="{{route('insert_schedule')}}" method="POST">
+            <form action="{{route('insert_schedule')}}" method="post">
                 @csrf
                 <div class="form-group">
                     <label for="schedule_city">City :</label>

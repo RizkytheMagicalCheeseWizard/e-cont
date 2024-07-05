@@ -1,0 +1,54 @@
+body {
+    color: white;
+    background-image: url('/image/space-bg.png');
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.card-booking,.card-totalprice{
+    border-radius: 5px;
+    background-color: #1A212B;
+    color: white;
+    padding: 10px;
+}
+.result{
+    font-size: 25px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #343030;
+}

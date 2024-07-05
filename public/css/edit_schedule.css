@@ -64,16 +64,26 @@ h2 {
     font-size: 16px;
     cursor: pointer;
 }
+.gyat{
+    display: flex;
+}
 
 .btn-primary {
     background-color: green;
     justify-content: center;
+    transition: .5s;
 }
 
 .btn:hover {
     background-color: darkgreen;
 }
-
+.btn-danger{
+    background-color: red;
+    transition: .5s;
+}
+.btn-danger:hover{
+    background-color: darkred;
+}
 @media (max-width: 768px) {
     .container {
         width: 90%;

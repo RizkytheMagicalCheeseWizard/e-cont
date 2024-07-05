@@ -7,11 +7,21 @@ body {
     font-family: sans-serif;
     color: white;
     background-image: url('/image/space-bg.png');
+<<<<<<< HEAD
     background-size: auto;
     background-position: top;
     background-repeat: no-repeat;
     background-color: #2e4057;
     margin: 0;
+=======
+    background-size:auto;
+    background-position:top;
+    background-repeat:no-repeat ;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+>>>>>>> 9d1816f079bc3440718b95e9e37336b6ddd2e15d
 }
 
 .container {

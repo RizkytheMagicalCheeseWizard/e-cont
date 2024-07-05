@@ -2,7 +2,15 @@ body{
     display: grid;
     place-items: center;
     height: 50vh;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-image: url('/image/bus.jpg');
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
   }
   .wrapper {
     --input-focus: #2d8cf0;
